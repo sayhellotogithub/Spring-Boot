@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
+import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -34,5 +35,8 @@ public class DemoWebTest {
         //perform执行一个请求，post构造一个请求,andDo添加一个结果处理器
         mockMvc.perform(MockMvcRequestBuilders.post("/hello?name=jetty").accept(MediaType.APPLICATION_JSON_UTF8))
                 .andDo(print());
+    }
+    public void saveUser() {
+       //mockMvc.perform(MockMvcRequestBuilders.post("/save"))
     }
 }
