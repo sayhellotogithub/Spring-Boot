@@ -34,5 +34,21 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <!-- 热部署支持-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork><!-- 热部署添加-->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
