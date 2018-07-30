@@ -1,10 +1,12 @@
 
 server:
-  port: 8888
+  port: 8890
 banner:
-  location: classpath:logo.txt
+  location: classpath:xml/logo.txt
 
 spring:
+ application:
+   name: user
 # 数据库访问配置
 # 主数据源，默认的
  datasource:
@@ -14,7 +16,18 @@ spring:
   username: root
   password:
 
-management:
- security:
-   enabled: false
- port: 9001
+#management:
+# security:
+#   enabled: false
+# port: 9001
+
+eureka:
+ client:
+   service-url:
+     defaultZone: http://localhost:8888/eureka/
+#eureka:
+# client:
+#   register-with-eureka: false
+#   fetch-registry: false
+#   service-url:
+#     defaultZone: http://localhost:${server.port}/eureka/
