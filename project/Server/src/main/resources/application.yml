@@ -16,6 +16,13 @@ eureka:
     service-url:
      defaultZone: http://localhost:8889/eureka/
 
+# 如果不配的话，用户名默认为user 密码为启动时生成的随机数
+security:
+ basic:
+   enabled: true
+ user:
+  name: user
+  password: password123
 #---
 #spring:
 # profiles: peer2

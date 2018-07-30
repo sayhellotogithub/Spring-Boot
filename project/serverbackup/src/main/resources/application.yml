@@ -14,7 +14,7 @@ eureka:
    hostname: peer2
  client:
     service-url:
-     defaultZone: http://localhost:8888/eureka/
+     defaultZone: http://user:password123@localhost:8888/eureka/
 
 #---
 #spring:
