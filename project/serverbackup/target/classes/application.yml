@@ -1,20 +1,20 @@
-management:
- security:
-   enabled: false
- port: 9001
+#management:
+# security:
+#   enabled: false
+# port: 9001
 
 spring:
  application:
    name: microservice-discovery-eureka
 
 server:
- port: 8888
+ port: 8889
 eureka:
  instance:
-   hostname: peer1
+   hostname: peer2
  client:
     service-url:
-     defaultZone: http://localhost:8889/eureka/
+     defaultZone: http://localhost:8888/eureka/
 
 #---
 #spring:

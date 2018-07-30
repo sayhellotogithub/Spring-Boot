@@ -1,0 +1,7 @@
+Æô¶¯profile1
+java -jar "D:\Mind Map\Senior System Architect
+\Spring Boot\project\Server\target\com.iblogstreet.server-1.0-SNAPSHOT.jar" --spring.profiles.active=peer1
+
+java -jar "D:\Mind Map\Senior System Architect
+\Spring Boot\project\Server\target\com.iblogstreet.server-1.0-SNAPSHOT.jar" --spring.profiles.active=peer2
+
